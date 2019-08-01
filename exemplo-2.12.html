@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Example of CSS Multi-Column Layout</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+		.multicol {
+			position:			relative;
+			margin:				auto;
+			max-width:			960px;	
+			columns:			4 12em;
+			column-gap:			2em;
+			column-rule:		10px dotted black;
+		}
+		.multicol p {
+			padding:			0.25em;
+		}		
+		.multicol figure {
+			margin:				0;
+			padding:			0;
+			width:				100%;
+		}
+		.multicol figcaption {
+			color:				#999;
+			font-size:			0.7em;	
+		}
+		
+		.multicol img {
+			width:				100%;
+		}
+		.multicol h1 {
+			column-span:		all;
+			margin:				0.25em 0;
+			padding:			0;
+			text-transform:		uppercase;
+			font-size:			2em;
+		}
+		.multicol h2 {
+			margin:				0.25em 0;
+			padding:			0;
+			text-transform:		uppercase;
+			font-weight:		normal;
+			font-size:			1.2em;
+        }
+        .refs{position:relative; margin-left:auto;padding-right:10%;text-align:right;width: 50%;font:normal 10px verdana, sans-serif;}
+		</style>		
+	</head>
+	<body>
+		<article class="multicol">
+			<h1>Multi-Columns</h1>
+			<h2>Exemplo de aplicação das propriedades de <i>multi-columns</i> do CSS3</h2>
+			<figure>
+				<img src="img/multicol.png" alt="Multi-Column Example" />
+				<figcaption>Multi Coluns Exemplo</figcaption>
+			</figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum felis id nisi molestie, ut porttitor turpis lacinia. Fusce placerat et neque ac eleifend. Nunc nec porttitor diam. Pellentesque ut nunc massa. Nunc in nulla et eros dictum commodo sed sit amet ligula. Ut pellentesque finibus eleifend. Morbi id ligula sed velit malesuada posuere. Donec ut ipsum suscipit, volutpat arcu ac, finibus justo. Pellentesque at mauris et dolor blandit placerat non id odio. Nullam congue interdum ex sed ornare. Pellentesque diam lectus, imperdiet non bibendum quis, sagittis eget eros. Duis diam lectus, rhoncus ut accumsan et, lacinia vitae elit. Nunc ac convallis dui, sed consectetur purus.</p>
+            <p>Ut et augue massa. Etiam tincidunt ligula sit amet mauris tristique condimentum. Duis vel felis et sapien malesuada placerat pharetra vitae lorem. Mauris quis porttitor leo. Aenean lobortis accumsan magna, sit amet varius ante aliquet vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque in lorem vestibulum, imperdiet leo id, blandit urna. In vitae tortor laoreet, venenatis mauris sit amet, tincidunt urna. Suspendisse id tristique ex. Sed facilisis neque id vestibulum finibus. Phasellus leo est, iaculis semper nisi sed, scelerisque rhoncus enim. Nunc ligula nunc, auctor eu dolor eget, porttitor ultrices sapien. Praesent elementum magna eu odio cursus, sed volutpat massa vehicula. Praesent viverra diam sed dui sollicitudin pretium. Maecenas a aliquet nisl. Nulla facilisi.</p>
+            <p>Praesent nec laoreet augue, sed aliquet nibh. In magna tortor, scelerisque in mattis in,<figure>
+                    <img src="img/multicol.png" alt="Multi-Column Example" />
+                    <figcaption>Multi Coluns Exemplo</figcaption>
+                </figure> ultricies maximus lectus. Praesent condimentum efficitur mauris sed fermentum. Phasellus id erat sit amet est tristique semper id rhoncus elit. Nunc tempus magna vel semper tristique. Quisque hendrerit eleifend ante, nec suscipit tellus. Morbi iaculis lacinia tincidunt. Vivamus sed tempus lorem, sed euismod sem. Nulla porta lacinia orci, eu fringilla justo ullamcorper ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vitae odio nec dui posuere finibus consequat a libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nibh mauris, pharetra id consectetur et, semper malesuada risus. Praesent velit diam, tristique non urna sed, imperdiet molestie nunc. Phasellus at eros consequat, finibus purus non, tempus ipsum. Fusce convallis quis tortor porttitor vehicula.</p>
+            <p>Mauris nulla nulla, convallis eu est ac, malesuada mattis arcu. Donec non ullamcorper justo. Donec varius nisl nec risus condimentum, nec pellentesque sapien euismod. Ut vitae orci egestas, euismod neque at, lacinia est. Aliquam sodales sem quis mauris vehicula venenatis. Integer sed auctor leo, venenatis tempor ex. Donec et dapibus ligula, ut feugiat erat.
+                    <figure>
+                            <img src="img/multicol.png" alt="Multi-Column Example" />
+                            <figcaption>Multi Coluns Exemplo</figcaption>
+                        </figure> 
+                        In aliquam ipsum a arcu tincidunt, auctor porttitor mi auctor. Vestibulum ultrices risus eget leo tempus, id congue neque scelerisque.</p>
+            </article>
+            <p class='refs'>Adaptação de: SAM, Hampton-Smith. Pro CSS3 Layout Techniques: Leverage the power of CSS3 to create sophisticated layouts.Morayshire,UK, Apress, 2016. 
+                    <br><a href='https://github.com/apress/pro-css3-layout-techniques' target='_blank'><i>Códigos Orginais do Livro</i></a>
+                </p>
+	</body>
+</html>
