@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: black;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #alemanha {
+            background: yellow;
+            border: 1px solid white;
+            width: 200px;
+            height: 140px;
+        }
+
+        #alemanha div {
+            height: 33%;
+        }
+
+        #acor1 {
+            background-color: black;
+        }
+
+        #acor2 {
+            background-color: red;
+        }
+
+        #franca {
+            background-color: red;
+            border: 1px solid white;
+            width: 200px;
+            height: 140px;
+        }
+
+        #franca div {
+            height: 100%;
+            width: 33%;
+            float: left;
+        }
+
+        #fcor1 {
+            background-color: blue;
+        }
+
+        #fcor2 {
+            background-color: white;
+        }
+
+        #China {
+            font-family: verdana;
+            background-color: red;
+            border: 1px solid yellow;
+            width: 190px;
+            height: 135px;
+            padding-left: 10px;
+            padding-top: 5px;
+            color: yellow;
+        }
+
+        #texto {
+            color: white;
+            font-family: Ubuntu, verdana;
+            border: 1px dotted white;
+            text-align: justify;
+            text-indent: 40px;
+            width: 100%;
+            font-size: 22px;
+            padding: 10px;
+            display: block;
+            /*com o valor "none" esconde a DIV */
+
+        }
+
+        #flutuando {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        #est0 {
+            margin-top: -3px;
+            font-size: 50px;
+            float: left;
+        }
+
+        #est1 {
+            margin-top: 5px;
+            margin-left: 35px;
+            line-height: 10px;
+        }
+
+        #est2 {
+            margin-left: 40px;
+            line-height: 15px;
+        }
+
+        #est3 {
+            margin-left: 40px;
+            line-height: 10px;
+        }
+
+        #est4 {
+            margin-top: 2px;
+            margin-left: 35px;
+            line-height: 2px;
+        }
+
+        .valor {
+            color: #00ff45;
+            font-weight: bold;
+        }
+
+        .float {
+            color: #ffff45;
+            font-weight: bold;
+        }
+
+        .box {
+            text-decoration: none;
+            border: 1px solid gray;
+        }
+
+        #sintaxe {
+            text-decoration: none;
+        }
+
+        #id {
+            color: #ff6633;
+        }
+
+        #propriedade {
+            color: #f3ff00;
+        }
+
+        #valor {
+            color: #00ff67;
+        }
+
+        #chaves {
+            color: #FF40F0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="texto">
+        <h1>Propriedade Float.</h1>
+        <p>
+            Com a propriedade float o <span class="box">BOX </span>é retirado de sua posição inicial e <span
+                id="flutuando">Flutuado</span> para a direita <b>(<i>rigth</i>)</b> ou esquerda <b>(<i>left</i>)</b>. A
+            regra de estilo que define esse posicionamento usa a declaração <span class="float">float</span> e seus
+            valores <span class="valor"> left </span>, <span class="valor"> rigth </span>, <span class="valor"> none
+            </span> e <span class="valor"> inherit </span> <b> (<i>Herdado </i>)</b>.<br><br> Sintaxe:<br><br>
+            <div id="sintaxe"><span id="id">#id</span> <span id="chaves">{ <span id="propriedade">float</span>: <span
+                        id="valor">valor</span> ; }</span></div>
+        </p>
+    </div>
+    <div id="China">
+        <div id="est0">*</div>
+        <div id="est1">*</div>
+        <div id="est2">*</div>
+        <div id="est3">*</div>
+        <div id="est4">*</div>
+    </div>
+    <div id="franca">
+        <div id="fcor1"></div>
+        <div id="fcor2"></div>
+        <div id="fcor3"></div>
+    </div>
+    <div id="alemanha">
+        <div id="acor1"></div>
+        <div id="acor2"></div>
+        <div id="acor3"></div>
+    </div>
+
+
+</body>
+
+</html>
