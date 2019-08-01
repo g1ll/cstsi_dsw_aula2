@@ -1,0 +1,162 @@
+/*
+CONSTRUÇÃO DE PÁGINAS WEB
+PROF. MSC. GILL VELLEDA GONZALES
+EXEMPLOS DAS AULAS PRÁTICAS 12 E 13 DE  14/05 E 21/05
+CSS DA PRIMEIRA PÁGINA ()layout.html)
+*/
+
+body  {  	/*Seleciona a tag <body> para aplicar as propriedades abaixo*/
+    margin: 0px;  /*Configura zero pixel de margem para todos os lados da tag <body> (top right bottom left)*/
+    padding: 0px; /*Configura zero pixel de espaçamento internto para todos os lados da tag <body> (top right bottom left)*/
+    background: #ddd; /*Configura a cor #ddd para o fundo da tag <body>*/
+    font: 18px normal arial; /*Configura a font padrão de 18 pixels estilo normal e da família arial para todo o conteúdo da tag body*/
+}
+
+#tudo{ /*Seleciona a div com o ID = tudo*/
+    margin-left: auto; /* Configura a margem esquerda (left) automaticamente*/
+    margin-right: auto; /* Configura a margem direita (right)  automaticamente*/
+    width:1024px; /* Determina a largura de 1024 pixels para a DIV tudo*/
+    height: auto; /* Determina a altura automática de acordo com o conteúdo para a DIV tudo*/
+}/*FIM das propriedades para a DIV com o ID = tudo*/
+
+/* A DIV tudo contém três principais DIVs (header, content e footer)*/ 
+
+/* -------------CONFIGURANDO OS ELEMENTOS FILHOS DA DIV ID =tudo------------------------*/ 
+
+/*O primeiro elemento da div #tudo  é  o #header(cabeçalho do site) área do topo e do login*/
+#header{ /*Seletor de ID # seleciona a div com o id = header*/
+    background-color: #626262; /*Determina a cor cinza #626262 para o fundo da div*/
+    height: 100px; /*Configura a altura fixa para o cabeçalho da página de 100 pixels*/
+}
+
+/*O segundo elemento filho da div #tudo é o #content (conteúdo) área no centro da página onde fica o conteúdo principal*/
+#content{ /*Seletor de ID # seleciona a div com o id = header*/
+    overflow: auto; /*Configura o overflow em automático, na prática é para os elementos com float seguirem dentro desta div (mantem o tamanho)*/
+    background-color: #f1f1f1; /*Configura a cor de fundo*/
+}
+
+/*A última  div filha da div #tudo é o #footer, rodapé da página, onde somente está o título no final da página*/
+#footer{ /*Seleciona a Div com ID footer*/
+    background-color: #78a300; 
+    max-width: 100%; /*Configura a largura máxima de 100% da largura do elemento pai (div #tudo)*/
+    color:#fff; /*cor do texto*/
+    text-align: center; /*Centraliza o conteúdo do tipo texto, centraliza somente texto*/
+}
+/* ----------------------------------------------------------------------------*/ 
+/* -------------CONFIGURANDO OS ELEMENTOS FILHOS DA DIV ID =header------------------------*/ 
+#logo{/*Seletor ID seleciona a div com o ID = logo*/
+    float: left; /*Flutua o elemente para a esquerda (left)*/
+    background-color: white;/*Configura a cor de fundo para branco*/
+    width: 10%; /*Configura a largura de 10 porcento do elemento pai (div #header)*/
+    height: 100%; /*Configura a altura de 100 porcento do elemento pai (div #header)*/
+    background-image: url(../img/logoifsul100.png); /*Adiciona um imagem de fundo na div*/
+    background-repeat: no-repeat; /*Determina que a imagem de fundo não deve repetir*/
+    /*demais valores para o (background-repeat) */
+    /*repeat: Repete a imagem (Configuração padrão)*/
+    /*repeat-x: Repete a imagem somente no eixo X*/
+    /*repeat-y: Repete a imagem somente no eixo Y*/
+    background-position: center;/*Posicionando a imagem de fundo no centro da div*/
+}
+
+#textlogo{/*Seleciona a DIV com ID = textlogo*/
+    display:none;/*Esconde a div e seu conteúdo*/
+}
+
+#topo{/*Seletor do tipo ID seleciona a div com o id = topo*/
+    float: left;/*Flutua o elemente para a esquerda (left), coloca o a div #topo ao lado da div #logo*/
+    width:90%; /*Configura a largura de 90 porcento do elemento pai (div #header), 100% - 10% da div #logo*/
+    height: 100%; /*Configura a altura de 100 porcento do elemento pai (div #header)*/
+}
+
+/*A div #titulo é usada para posicionar e dar estilo ao título da página no centro da div #topo*/
+#titulo{ /*Seletor ID: seleciona o elemento (div ou outra tag html) que contenha o ID = titulo*/
+    width: 35%;/*Configura a largura de 35% da largura do elemento pai (#topo)*/
+    margin-left: auto; /*Configura a margem externa esquerda (left) automaticamente centralizando o elemento*/
+    margin-right: auto; /*Configura a margem externa esquerda (right) automaticamente centralizando o elemento*/
+    margin-top: 2%; /*Configura a margem externa superior (top) de 2% da página*/
+    color: #fff; /*Determina a cor branca para o texto*/
+    font: bold 24px sans-serif;/*Configura a fonte com o estilo Bold, tamanho de 24 pixels e da família sem serifas(sans-serif)*/
+    text-align: center; /*Alinha o texto no centro da DIV, outros valores são (left; right; justify)*/
+}
+
+/*Configura o item de Login no canto superior direito da página*/
+#login{ /*Seletor ID: Seleciona a div com o id=login*/
+    float:right;/*Flutua a div para a direita posicionando o login no canto superior direito*/
+    background-color: #cbf161;/*Determina a cor verde de fundo*/
+    width: 20%; /*Configura a largura de 20% do elemento pai (#topo)*/
+    height: 30%;/*Configura a altura de 30% do elemento pai (#topo)*/
+    font: bold 18px sans-serif; /*Configura o estilo da fonte : negrito (bold); 18 pixels e sem serifas (arial, verdana etc)*/
+    border-bottom-left-radius:70px;/*Canto arredondado para o canto inferior esquerdo da div*/
+    text-align: right; /*Alinhamento do texto para a direita*/
+    color:#626262; /*Configura a cor do texto*/
+    padding-right: 5px; /*Adiciona um espaçamento interno à DIV de 5 pixels da direita (right) para dentro (padding) da div */
+}
+/* ----------------------------------------------------------------------------*/ 
+/* -------------CONFIGURANDO OS ELEMENTOS FILHOS DA DIV ID =content------------------------*/ 
+#menu{/*Seletor do tipo ID: Seleciona a div com o id= menu*/
+    float: left; /*Flutua o menu para a esquerda posicioanando ao lado da div #conteudo*/
+    width: 20%;/*Configura a largura máxima do menu em 20% do elemento pai (#content) */
+}
+
+#conteudo{/*Seletor do tipo ID: Seleciona a div com o id= menu*/
+    float: left;/*Flutua a div #conteudo para a esquerda posicioanando ao lado da div #menu*/
+    width: 80%;/*Configura a largura máxima do conteudo em 80% (100% - 20% do #menu) do elemento pai (#content) */
+    background-color:#fff; /*Determina a cor de fundo para branco*/
+}
+/* ----------------------------------------------------------------------------*/ 
+/* -------------CONFIGURANDO OS ELEMENTOS FILHOS DA DIV ID =menu------------------------*/ 
+ul{/*Seletor de Elemento: Seleciona a tag ul usada para agrupar um lista*/
+    margin-right: 30px;/*Configura a uma margem externa à direita de 30 pixels*/
+}
+
+li{/*Seletor de Elemento: Seleciona a tag il usada para criar itens dentro de uma lista (ul)*/
+    list-style: none;/*Determina o estilo da lista: none = sem estilo (retira o estilo padrão)*/
+    background-color: #cbf161;/*Configura a cor de fundo para um determinado tom de verde #cbf161*/
+    margin-bottom: 3px;/*Determina uma margem externa inferior entre cada elemento li */
+    width: 80%;/*Configura a largura de 80% do tamanho do elemento pai (ul)*/
+    color: #626262;/*Configura a cor de texto para um certo tom de cinza #626262*/
+    text-align: center; /*centraliza o texto */
+    border-bottom-right-radius:7px; /*Torna o canto inferior (bottom) direito (right)  arredondado para cada elemento li*/
+    /*  border-bottom-lefft-radius:7px;*/ /*Arredonda o canto inferior esquerdo*/
+    /*    border-top-right-radius: 7px;*/ /*Arredonda o canto superior direito*/
+    /*    border-top-left-radius: 7px;*/ /*Arredonda o canto superior esquerdo*/
+    /*border-radius: 7px;*/ /*Arredonda todos os cantos do elemento*/
+}
+
+li a{/*Seletor compoto: seleciona todos os elementos <a> filhos de elementos <li>*/    
+    text-decoration: none;/*Remove o estilo de decoração padrão do link a*/
+    color: inherit; /*Força ao elemento <a> herdar (inherit) a cor definida no elemento pai <li>*/
+}
+
+li:hover{ /*Seletor pseudo-classe: Aplica estas propriedades somente ao passar o mouse sobre o elemento*/
+    background-color:#626262; /*Configura o fundo cinza #626262*/
+    color:#fff; /*Determina a cor branca para o texto do elemento*/
+    font-weight:bolder; /*Configura o estilo negrito (bold) para o texto*/
+}
+
+/* ----------------------------------------------------------------------------*/ 
+/* -------------CONFIGURANDO OS ELEMENTOS FILHOS DA DIV ID =conteudo------------------------*/ 
+
+p{/*Seleciona todos os elementos do tipo parágrafo <p> */
+    text-align: justify; /*Determina o alinhamento justificado para o texto do parágrafo*/
+    text-indent: 20px;/*Cria um espaço na primeira linha do parágrafo */
+    color: #323232; /*Configura a cor do texto*/
+    font: normal 18px sans-serif; /*Determina o estilo da fonte do texto (resumo em uma linha das seguintes propriedades abaixo)*/
+/*    font-weight: normal; 
+    font-size: 18px;
+    font-family: sans-serif;*/
+    /* top right bottom left (sentido horário)*/
+    padding: 0% 5% 2% 5%; /*Determina um espaço interno em cada parágrafo (margem interna), equivalente às propriedades abaixo*/
+/*    padding-top:0%;
+    padding-right:5%;
+    padding-bottom:2%;
+    padding-left: 5%;*/
+}
+
+.p2{/*Seletor Classe (PONTO): Seleciona todos os elementos da classe .p2 (class='p2')*/
+    color:#68b92c;/*Aplica um tom de verde somente no texto dos  elementos da classe p2*/
+}
+
+p:first-letter{ /*pseudo classe first-letter altera as propriedades do primeiro caracter*/
+    font-size: 2em;
+}
