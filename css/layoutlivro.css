@@ -11,6 +11,7 @@ body {
      background: #efefef;
      border: 1px solid #ccc;
      margin: 10px auto;
+     overflow: auto;
     }
     
     #header {
@@ -73,7 +74,5 @@ body {
      border: #ccc;
      margin: 5px;
     }
-    
-    .clearfloat {
-     clear: both;
-    }
+
+    .relative+p{position:fixed; bottom:0px;right: 10%;text-align:right;width: 50%;font:normal 10px verdana, sans-serif;}
