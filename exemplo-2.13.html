@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Example of CSS Flex Box Layout</title>
+	<style>
+		#library {
+			position: relative;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+
+		.library-item {
+			display: flex;
+			flex-flow: column;
+		}
+
+		.library-item>button {
+			margin-top: auto;
+		}
+
+		article {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: white;
+			border-radius: 20px;
+			margin: 10px;
+			padding: 10px;
+			width: 250px;
+			text-align: center;
+		}
+
+		section {
+			background-color: grey;
+		}
+
+		button{background-color: black;border-radius: 20px;color:white;}
+		.refs{position:relative; margin-left:auto;padding-right:10%;text-align:right;width: 50%;font:normal 10px verdana, sans-serif;}
+		
+	</style>
+</head>
+
+<body>
+	<section id="library">
+		<article class="library-item">
+			<h1>The Wonderful Wizard of Oz</h1>
+			<h2>by L. Frank Baum</h2>
+			<img src="img/oz.jpg" alt="Original cover of The Wonderful Wizard of Oz" />
+			<button>Remove from library</button>
+		</article>
+		<article class="library-item">
+			<h1>Pride and Prejudice</h1>
+			<h2>by Jane Austen</h2>
+			<img src="img/pandp.jpg" alt="Pride and Prejudice book cover" />
+			<button>Remove from library</button>
+		</article>
+		<article class="library-item">
+			<h1>Adventures of Huckleberry Finn</h1>
+			<h2>by Mark Twain</h2>
+			<img src="img/huck.jpg" alt="Original cover of Huckleberry Finn" />
+			<button>Remove from library</button>
+		</article>
+	</section>
+	<p class='refs'>Adaptação de: SAM, Hampton-Smith. Pro CSS3 Layout Techniques: Leverage the power of CSS3 to create sophisticated layouts.Morayshire,UK, Apress, 2016. 
+		<br><a href='https://github.com/apress/pro-css3-layout-techniques' target='_blank'><i>Códigos Orginais do Livro</i></a>
+	</p>
+</body>
+
+</html>
